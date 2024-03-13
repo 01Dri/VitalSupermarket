@@ -21,7 +21,7 @@ public class Batch  implements Serializable {
 
 
     @ManyToOne
-    @JoinTable(name = "product_id")
+    @JoinColumn(name = "product_id")
     private Product product;
 
     private Date expirationDate;
@@ -29,7 +29,7 @@ public class Batch  implements Serializable {
     private Integer quantity;
 
     @ManyToOne
-    @JoinTable(name = "supplier_id")
+    @JoinColumn(name = "supplier_id")
     private Supplier supplier;
 
     private Date entryDate;

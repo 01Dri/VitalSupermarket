@@ -7,4 +7,4 @@ CREATE TABLE batch (
     entry_date DATE,
     FOREIGN KEY (product_id) REFERENCES product(id),
     FOREIGN KEY (supplier_id) REFERENCES supplier(id)
-)
+);

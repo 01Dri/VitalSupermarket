@@ -36,8 +36,10 @@ public class Product implements Serializable {
 
     private Double rating;
 
-    @OneToMany
-    private List<Batch> batches;
+//    @OneToMany
+//    @JoinTable(name = "product_batchs")
+//    @OneToMany(mappedBy = "product")
+//    private List<Batch> batches;
 
 
     public Product() {

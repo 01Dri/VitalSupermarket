@@ -25,6 +25,8 @@ public class Supplier {
     private String corporateCnpj;
 
     @OneToMany
+    @JoinTable(name = "supplier_batches", joinColumns = @JoinColumn(name = "supplier_id"),
+    inverseJoinColumns = @JoinColumn(name="batch_id"))
     private List<Batch> batches;
 
 

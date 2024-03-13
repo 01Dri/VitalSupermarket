@@ -98,6 +98,6 @@ public class ProductBuilderImpl  implements  ProductBuilder{
 
     @Override
     public Product build() {
-        return new Product(this.id, this.name, this.price, this.quantity, this.description, this.brand, this.expirationDate, this.barcode, this.rating, this.batches);
+        return new Product(this.id, this.name, this.price, this.quantity, this.description, this.brand, this.expirationDate, this.barcode, this.rating);
     }
 }
